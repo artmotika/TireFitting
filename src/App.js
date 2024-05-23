@@ -9,7 +9,7 @@ function App() {
       <h1>Login Google</h1>
       <GoogleLogin
         onSuccess={credentialResponse => {
-          const credentialResponseDecoded = jwt_decode(
+          const credentialResponseDecoded = jwtDecode(
             credentialResponse.credential
           );
           console.log(credentialResponseDecoded);
